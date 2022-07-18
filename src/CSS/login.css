@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.user-login-container, .user-signup-container, .user-auth-container{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.user-login-container, .user-signup-container {
+    font-family: 'Poppins', sans-serif;
+
+    background-image: linear-gradient(180deg, rgb(0, 0, 255),  rgb(225, 0, 255));
+
+    margin: 5% auto;
+
+    border-radius: 10px;
+}
+
+.user-login-container {  
+
+    width: 350px;
+    height: 70vh;
+
+}
+
+.user-signup-container{
+    width: 350px;
+
+    height: 60vh; 
+
+}
+
+h2{
+
+    font-size: 2em;
+    color: rgb(0,0,255);
+
+    margin-bottom: 0;
+
+}
+
+.login-form, .sign-up-form, .user-auth-container {
+    background-color: #ffffff;
+
+    border: 2px solid rgb(194, 194, 194);
+
+    border-radius: 10px;
+}
+
+.login-form, .sign-up-form {  
+    display: flex;
+    flex-direction: column;  
+
+}
+
+.login-form{
+    width: 90%;
+    height: 50%;
+
+    margin-top: 5%;
+
+}
+
+.sign-up-form {
+    width: 90%;
+    height: 70%;
+}
+
+.remember-me-container{    
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;  
+    
+    margin-left: 5%;
+}
+
+
+#remember {
+    width: 20%;
+    margin-right: -3%;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 70%;
+}
+
+.input-control{
+    font-size: 1.5em;
+    width: 80%;
+}
+
+.input-email{
+    margin-bottom: 3%;
+
+    width: 255px;
+    height: 35px;
+        
+    border-radius: 3px;
+}
+
+.password-container{
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    height: 40px;
+   
+    border-radius: 3px;
+
+    margin: 5% 0 2% 0;
+}
+
+.input-password{
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    
+    width: 253px;
+    height: 35px;
+
+    border: 2px solid rgb(112, 112, 112);
+    border-radius: 3px; 
+
+    z-index: 1;
+
+    margin-left: -1%;
+}
+
+.show-hide-password{
+    position: absolute;
+
+    width: 10%;
+    height: 37px;
+
+    background-image: url('../Assets/eye.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    top: 0;
+    right: 0;
+
+    margin-top: 0;
+    margin-right: 2%;
+
+   /* border: 2px solid rgb(112, 112, 112);
+    border-left: none;*/
+
+    z-index: 2;
+}
+
+.show-hide-password:hover{
+    cursor: pointer;
+}
+
+.forgot-password-container{   
+    width: 80%;
+    height: 10%;
+
+    text-align: left;
+
+    color: blue;
+
+    margin-left: 2%;
+}
+
+.forgot-password-container:hover {
+    cursor: pointer;
+}
+
+
+.button-container {
+    width: 100%;
+    height: 20%;
+   
+    margin-top: 5%;        
+}
+
+.btn {
+    width: 130px;
+    height: 40px;
+
+    font-size: 1.25em;
+    font-weight: bold;
+
+    border: none;
+
+    border-radius: 5px;
+}
+
+.btn:hover, .facebook-container:hover{
+    cursor: pointer;
+}
+
+.btn-submit {
+    width: 80%;
+    height: 50px;    
+    
+    background-color: rgb(0, 152, 212);
+    color: #ffffff;        
+
+    margin-top: -5%;
+    margin-left: 2%        
+}
+
+.user-auth-container{
+    width: 90%;
+    height: 30%;
+     
+
+    margin-top: 5%;
+}
+
+.facebook-container{
+    display: flex;
+    flex-direction: row;
+
+    width: 222px;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgb(196, 196, 196);
+
+    border-radius: 5px;
+
+    margin-top: 5%;
+
+}
+
+.facebook-icon{
+    width: 25px;
+    height: 20px;
+    border-right: none;
+}
+
+.my-facebook-button-class{
+    width: 150px;
+    height: 35px;
+   
+    font-size: 0.85em;
+    font-weight: bold;
+
+    background-color: #ffffff;
+  
+    border: none;
+}
+
+.sign-up {
+    color: blue;
+}
+
+.sign-up:hover {
+    cursor: pointer;
+}
+
+.message{
+    width: 80%;
+    font-size: 0.75em;
+}
+
+.error-message-container{
+    color: red;
+
+    margin-top: -10%;
+    margin-bottom: 2%;
+}
+
+.sign-up-button-container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+
+    width: 100%;
+    height: 20%;
+   
+    margin-top: 5%;     
+}
+
+.input-first-name, .input-last-name {
+    width: 253px;
+    height: 35px;  
+
+    border: 2px solid rgb(112, 112, 112);
+    border-radius: 3px; 
+
+    margin-bottom: 10%;
+}
+
+.btn-signup, .btn-cancel{
+    width: 40%;
+}
+
+.btn-signup{
+    color:#ffffff;
+
+    border: none;
+}
+
+.btn-cancel {
+    background-color: lightgrey;
+
+    color: #000000;
+}
+
+.logout-container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+    height: 600px;
+
+    background-image: linear-gradient(180deg, rgb(0, 0, 255),  rgb(225, 0, 255));
+
+    margin: 5% auto;
+
+}
