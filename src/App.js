@@ -6,9 +6,9 @@ import Register from './Components/Register';
 
 import './App.css';
 
-const clientId = "191225946871-vkejok79rqrm4jnrapjqogjf86psk8r5.apps.googleusercontent.com";    
+const clientId = "Replace With Your Google APP ID" + ".apps.googleusercontent.com";    
    
-const appId=  "724224715524095";
+const appId = 'Replace With Your Facebook API ID";
 
 function App() { 
 
