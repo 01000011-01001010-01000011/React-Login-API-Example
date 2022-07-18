@@ -188,10 +188,8 @@ const Login = (props) => {
 
         let currentUser = userService.verifyUser(emailInput);
 
-        if(currentUser){
-           
-           // console.log("Password: " + checkUser.password);
-
+        if(currentUser){          
+         
             const salt = bcrypt.genSaltSync(10);
 
             const password = bcrypt.hashSync(passwordInput, salt);
@@ -199,12 +197,8 @@ const Login = (props) => {
             const goodUser = userService.verifyPassword(password, currentUser);
 
             if(goodUser){
-              
-                //console.log(goodUser, checkUser); 
-
+                            
                 userService.logInUser(currentUser);
-
-                // console.log(localStorage.getItem('currentUser'));
 
                 props.checkLogin(true);
                 props.processId(3);
@@ -220,7 +214,6 @@ const Login = (props) => {
             setErrorMessage(error);
         }
         
-       // console.log("GOOD USER: " + goodUser);
     }       
     
     function checkPassword() {
