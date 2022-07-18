@@ -1,3 +1,19 @@
+# Notes
+
+#JSON Server
+Uses JSON server for users databases 1) oauth users on port 5000 2) registered users on port 4200 
+The users databases can be combined into one main user database 
+
+#Oauth Validation
+Requires @react-oauth/google, jwt-decode, and react-facebook-login
+JWT used to decode Googles JWT
+
+#Form
+Requires semantic-ui-react and react-hook-form
+
+#bcrypt
+Uses bcrypt (bryptjs) for encryption
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
